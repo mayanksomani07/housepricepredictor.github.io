@@ -22,4 +22,4 @@ def predict():
     prediction = pipe.predict(input)[0] * 1e5
     return str(np.round(prediction,2))
 if __name__=="__main__":
-    app.run(debug=True,port=5001)
+    app.run(debug=False,port='0.0.0.0')
