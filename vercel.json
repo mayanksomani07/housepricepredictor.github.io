@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "housePricePredictor/main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "housePricePredictor/main.py"
+    }
+  ]
+}
